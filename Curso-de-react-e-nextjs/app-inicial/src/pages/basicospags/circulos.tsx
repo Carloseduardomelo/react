@@ -6,7 +6,8 @@ export default function PagsCirculos(){
         flex items-center justify-center m-5
         
         `}>
-            <Circulo />
+            <Circulo text="circ #1" />
+            <Circulo text="circ #2"  queseperf/>
         </div>
     )
 }
