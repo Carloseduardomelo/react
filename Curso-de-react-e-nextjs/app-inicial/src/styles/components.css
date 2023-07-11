@@ -1,0 +1,3 @@
+.botao{
+    @apply border-zinc-400 mt-1 border text-center rounded-[1px];
+}
