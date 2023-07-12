@@ -1,5 +1,6 @@
 import {useState} from "react"
 import If from "./If";
+import { IconChevronDown , IconChevronUp} from "@tabler/icons-react";
 
 interface PerguntaProps{
     texte: string;
@@ -12,8 +13,9 @@ export default function Pergunta(props: PerguntaProps){
 
     return(
         <div className={`border border-zinc-100 p-[0px] rounded-[5px] overflow-hidden w-[100%]`}>
-            <div className={`bg-zinc-700 p-5 cursor-pointer select-none`} onClick={() => setAberta(!Aberta)}>
+            <div className={`bg-zinc-700 p-5 cursor-pointer select-none flex justify-between`} onClick={() => setAberta(!Aberta)}>
                 {props.texte}
+                {Aberta? < IconChevronUp/> : <IconChevronDown />}
             </div>
 
             <If teste={Aberta}>
