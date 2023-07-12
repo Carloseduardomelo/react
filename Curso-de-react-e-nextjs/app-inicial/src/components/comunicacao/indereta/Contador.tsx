@@ -6,7 +6,7 @@ export default function Contador(){
     const [num, setNum] = useState<Number>(0)
 
     function incre(){
-        setNum(num + 1)
+        setNum(1 + num)
     }
 
     function descre(){
@@ -14,7 +14,7 @@ export default function Contador(){
     }
     return(
         <div className={`flex flex-col border border-zinc-600 w-44 h-44 text-center p-1 `}>
-            <Display valor={num} />
+            <Display valor = {num} />
             <Botoes inc={incre} dec={descre} />
         </div>
     )
