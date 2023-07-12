@@ -6,6 +6,10 @@
 <!-- ! ✅[React] Components usando props -->
 <!-- ! ✅[React] components com eventos -->
 <!-- ! ✅[React] components com estado -->
+<!-- ! ✅[React]comunicação entre compomentes (direta) -->
+<!-- ! ✅[React] Comunicação entre compomentes (indireta) -->
+<!-- ! [React]  rederização condicional -->
+<!-- ! renderização de listas -->
 
 
 
