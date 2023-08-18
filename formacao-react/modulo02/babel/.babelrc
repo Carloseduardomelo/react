@@ -1,0 +1,6 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        ["@bable/preset-react" , {"runtime": "outomatic"}]
+    ]
+}

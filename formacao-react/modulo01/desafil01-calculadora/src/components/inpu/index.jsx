@@ -7,7 +7,7 @@ const Input = ({value}) => {
     return (
         <InputCont>
             <input type="text" value={value} 
-            disabled/>
+            disabledqq/>
         </InputCont>
     )
 }

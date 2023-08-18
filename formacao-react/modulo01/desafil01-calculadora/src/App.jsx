@@ -5,7 +5,10 @@ import Input from "./components/inpu"
 import { Container  , Contir , Row } from "./styld"
 
 const App = () => {
+  
 
+  //! os useState são formas de armazenar e setar valores
+  //!   variavel / setvalor da variavel
   const [number, setNumber] = useState('0');
   const [firstNumber, setFirstNumber] = useState('0');
   const [opereito , setOpereito] = useState('')
