@@ -4,7 +4,7 @@ const Hearder = () =>{
     return(
         <div>
             <Hearde>
-                <h1>Gitfiend</h1>
+                <h1>Gitfind</h1>
             </Hearde>
         </div>
     )

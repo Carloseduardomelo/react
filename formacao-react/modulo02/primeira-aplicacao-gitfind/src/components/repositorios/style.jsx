@@ -19,4 +19,16 @@ export const ContInfReposi = styled.div`
     flex-direction: column;
 
     gap: 20px;
+
+    a{
+        color: #006081;
+        text-decoration: none;
+    }
+
+    @media(max-width: 762px) and (min-width: 1px){
+        width: 90%;
+    }
+    @media(max-width: 502px) and (min-width: 1px){
+        width: 100%;
+    }
 `

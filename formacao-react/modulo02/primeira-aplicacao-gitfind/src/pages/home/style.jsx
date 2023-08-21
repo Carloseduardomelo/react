@@ -12,6 +12,18 @@ export const ContApp = styled.div`
     align-items: center;
     justify-content: center;
     gap: 30px ;
+
+    @media(max-width: 762px) and (min-width: 1px){
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+
+    }
 `
 
 export const ContAppImg = styled.div`
@@ -26,6 +38,12 @@ export const ContAppImg = styled.div`
 
     img{
         width: 80%;
+    }
+
+    @media(max-width: 762px) and (min-width: 1px){
+        img{
+            display: none;
+        }
     }
 `
 
@@ -44,6 +62,18 @@ export const ContAppConteito = styled.div`
         background-color: white;
         border: 2px solid white;
         margin-top: 30px;
+    }
+
+    @media(max-width: 762px) and (min-width: 1px){
+        hr{
+            width: 90%;
+        }
+    }
+    @media(max-width: 502px) and (min-width: 1px){
+        width: 90%;
+        hr{
+            width: 100%;
+        }
     }
 `
 export const StylesInput = styled.div`
@@ -76,6 +106,15 @@ export const StylesInput = styled.div`
         border-radius: 10px;
         border-color: whitesmoke;
         background-color: #1d2128;
+
+        @media(max-width: 762px) and (min-width: 1px){
+            width: 30%;
+
+            input{
+                background-color: red;
+                border-color: white;
+            }
+        }
     }
 `
 

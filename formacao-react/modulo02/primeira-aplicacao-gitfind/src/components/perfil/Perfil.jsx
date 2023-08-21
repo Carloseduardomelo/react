@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import { ContPerfil , ContFotoPerfil , ContPerfilDescricao } from './style'
+import foto from '../../assets/31221705_7746242.jpg'
 
-const Perfil = (url, nome, aroba, describe) =>{
+const Perfil = ({url=`${foto}`, nome = "carlos", aroba, describe}) => {
     return(
         <ContPerfil>
             <ContFotoPerfil>

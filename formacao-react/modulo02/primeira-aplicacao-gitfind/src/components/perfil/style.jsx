@@ -10,6 +10,21 @@ export const ContPerfil = styled.div`
     gap: 30px;
 
     margin-top: 30px;
+
+    @media(max-width: 762px) and (min-width: 1px){
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        h3{
+            font-size: 10pt;
+        }
+    }
 `
 
 export const ContFotoPerfil = styled.div`
@@ -48,5 +63,16 @@ export const ContPerfilDescricao = styled.div`
     }
     p{
         font-size: 11pt;
+    }
+
+    @media(max-width: 762px) and (min-width: 1px){
+        width: 100%;
+        align-items: center;
+
+        p{
+            font-size: 12pt;
+            margin-top: 8px;
+            text-align: center;
+        }
     }
 `
