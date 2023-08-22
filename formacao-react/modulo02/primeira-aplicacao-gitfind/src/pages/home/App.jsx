@@ -46,7 +46,8 @@ const App = () => {
             <input type="text" value={user} onChange={event => setUser(event.target.value)}placeholder="@username"/>
             <button type="button" onClick={() => buscarDado()}>buscar</button>
           </StylesInput>
-            <Perfil url={correntUser[1]} nome={`${correntUser[3] === null ? correntUser[0] : correntUser[3]}`} aroba={`@${correntUser[0] === null ? correntUser[3] : correntUser[0]}`} describe={`${correntUser[2] === null? 'usuario não tem bio' : correntUser[2]}`}/>
+            <Perfil url={correntUser[1]} 
+            nome={`${correntUser[3] === null ? correntUser[0] : correntUser[3]}`} aroba={`@${correntUser[0] === null ? correntUser[3] : correntUser[0]}`} describe={`${correntUser[2] === null? 'usuario não tem bio' : correntUser[2]}`}/>
             <hr/>
 
             <h3>Repositorios</h3>
