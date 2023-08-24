@@ -5,8 +5,14 @@ export default createGlobalStyle`
         padding: 0px;
         margin: 0px;
     }
+    html{
+        width: 100vw;
+        height: 100vh;
+    }
     body{
         background-color: #1d2128;
+        width: 100%;
+        height: 100vh;
     }
     hr{
         background-color: #E5E5E5;
