@@ -2,18 +2,19 @@ import { styled } from "styled-components";
 
 export const ContTudo = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    background: #1E192C;;
+
+    background: #1E192C;
 `
 export const Hearder = styled.div`
     width: 100%;
-    height: 20%;
+    height: 8%;
 
     display: flex;
     align-items: center;
@@ -44,24 +45,25 @@ export const HeraderButton = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
 
-    gap: 30px;
-
-    button{
-        width: 30%;
-        padding: 10px;
-
-        border-radius: 15px;
-        border: transparent;
-
-        color: black;
-        background-color: whitesmoke;
-
-        text-decoration: none;
-    }
+    margin-right: 50px;
     .link{
         text-decoration: none;
+        color: white;
+
+        width: 30%;
+        height: 35px;
+
+        border-radius: 15px;
+        
+        background-color: whitesmoke;
+
         color: black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #pri{
         background-color: transparent;
@@ -78,7 +80,7 @@ export const HeraderButton = styled.div`
 
 export const ContInfHer = styled.div`
     width: 100%;
-    height: 92vh;
+    height: 100%;
 
     display: flex;
     align-items: center;
@@ -94,7 +96,7 @@ export const ContInfHearder = styled.div`
     height: 100%;
 
 
-    color: white;
+    color: whitesmoke;
 
     display: flex;
     align-items: flex-start;
@@ -175,4 +177,174 @@ export const ContImgHearder = styled.div`
         }
     }
 `
-// home
+//! home
+
+export const LoginRegistro = styled.div`
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+`
+
+export const ContInfLogin = styled.div`
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: ;
+
+    font-family: open;
+
+
+    P{
+        width: 90%;
+
+        font-size: 40px;
+
+        color: whitesmoke;
+    }
+`
+
+
+export const ContINput = styled.div`
+    width: 40%;
+    height: 100%;
+
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        width: 40%;
+        height: 5%;
+        background-color: transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+
+    }
+    input{
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        margin-left: 10px;
+    }
+    hr{
+        width: 275px;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    img{
+        width: 16px;
+    }
+
+    h2{
+        color: white;
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+    h3{
+        color: darkgray;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    #pril{
+    }
+    #att{
+        width: 80%;
+        height: 10%;
+    }
+`
+
+export const ButEntar = styled.div`
+    #but{
+        width: 250px;
+        height: 35px;
+        border: 1px solid red;
+        padding: 4px;
+        border-radius: 25px;
+        margin-top: 50px;
+    }
+    button{
+        width: 250px;
+        height: 35px;
+        border-radius: 20px;
+        background-color: red;
+        color: whitesmoke;
+        border: none;
+    }
+    margin-bottom: 10px;
+`
+
+export const EsquiCriar = styled.div`
+    width: 100%;
+    margin-top: 50px;
+
+    #esqueCriar{
+        width: 50%;
+        height: 8%;
+
+        display: flex;
+        align-items: end;
+        justify-content: start;
+
+        color: #23DD7A;
+
+        p{
+            text-decoration: none;
+            width: 50%;
+        }
+    }
+    #link{
+        text-decoration: none;
+        color: #23DD7A;
+    }
+    #es{
+        color: #E5E044;
+    }
+`
+
+export const Att = styled.div`
+    width: 100%;
+    height: 10%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+
+    p{
+        width: 80%;
+        color: darkgray;
+    }
+`
+
+export const FazerLogin = styled.div`
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    color: white;
+
+    #link{
+        color: #23DD7A;
+        text-decoration: none;
+    }
+`
