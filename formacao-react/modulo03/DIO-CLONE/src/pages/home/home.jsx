@@ -26,7 +26,7 @@ return (
                 Enter
                 </Link>
                 <Link className="link" to={`/registro`}>
-                Cadatro
+                Cadatros
                 </Link>
             </HeraderButton>
         </Hearder>
