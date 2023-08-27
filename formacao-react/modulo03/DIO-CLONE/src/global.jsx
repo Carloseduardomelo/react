@@ -6,7 +6,7 @@ export default createGlobalStyle`
         margin: 0px;
     }
     html{
-        width: 100vw;
+        width: 99.9vw;
         height: 100vh;
     }
     body{

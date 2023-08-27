@@ -9,7 +9,6 @@ export const ContTudo = styled.div`
     justify-content: center;
     flex-direction: column;
 
-
     background: #1E192C;
 `
 export const Hearder = styled.div`
@@ -197,7 +196,6 @@ export const ContInfLogin = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: ;
 
     font-family: open;
 
@@ -346,5 +344,253 @@ export const FazerLogin = styled.div`
     #link{
         color: #23DD7A;
         text-decoration: none;
+    }
+`
+export const HomeLogadoStyle = styled.div`
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`
+
+export const InfLogado = styled.div`
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+export const HearderLogadoStyle = styled.div`
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+`
+export const InputLOgado = styled.div`
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    padding: 10px;
+
+    input{
+        width: 200px;
+        height: 30px;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+
+    }
+
+    img{
+        width: 62px;
+    }
+
+    #input{
+        img{
+            width: 25px;
+        }
+
+        border-radius:  15px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #c4b7b7;
+    }
+
+    p{
+        color: white;
+        font: 1000;
+        font-size: 20px;
+    }
+
+`
+
+export const FotoLogado = styled.div`
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    margin-right: 90px;
+    padding: 10px;
+
+    img{
+        width: 8%;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+`
+
+export const ContPostRanks = styled.div`
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 40px;
+`
+
+export const Post = styled.div`
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+`
+export const Ranks02 =  styled.div`
+    width: 30%;
+    height: auto;
+
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    flex-direction: column;
+`
+
+export const InfTop =  styled.div`
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+    gap: 700px;
+
+
+    margin: 50px 0 0 5px;
+`
+
+export const InfPostStyle = styled.div`
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+` 
+
+export const InfPostImg =  styled.div`
+    width: 100%;
+    height: 50%;
+
+    img{
+        width: 100%;
+        height: 100%;
+
+    }
+`
+
+export const InfPostInf = styled.div`
+    width: 98%;
+    height: 50%;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    gap: 30px;
+    padding: 10px;
+
+    color: white;
+    background-color: #3a3a3a;
+
+    border-radius: 10px;
+
+    img{
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    #divimg{
+        display: flex;
+        gap: 20px;
+    }
+    #nome{
+        font-size: 20px;
+        color: darkkhaki;
+    }
+`
+
+export const RanksContsEnd = styled.div`
+    width: 100%;
+    margin-bottom: 20px;
+
+`
+
+export const RankStyle = styled.div`
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    #contRank{
+        display: flex;
+        align-items: flex-start;
+        justify-content: end;
+
+        img{
+            width: 50px;
+            border-radius: 30px;
+        }
+
+    }
+
+    @keyframes loading {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    #div{
+        background: #7fec40;
+        position: relative;
+        height: 8px;
+        width: 100%
+    }
+
+    #div::after {
+        animation: loading 6s infinite ease-in-out;
+        background: #897FBA;
+        content: '';
+        position: absolute;
+        left: 0; top: 0; bottom: 0
+    }
+
+    #nome{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        margin-left: 30px;
+
+        p{
+            font-size: 20px;
+            color: white;
+        }
     }
 `

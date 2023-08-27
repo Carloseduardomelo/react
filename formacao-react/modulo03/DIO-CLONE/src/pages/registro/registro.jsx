@@ -3,7 +3,7 @@ import  fotologoDio from '../../assets/logo-dio 1.png'
 // import { calentario }from '../../assets/cadeado-trancado.png'
 import email from '../../assets/email.svg'
 import lock from '../../assets/lock.png'
-import vect from '../../assets/Vector.svg'
+import vect from '../../assets/vector.svg'
 import {
   ContTudo,
   Hearder,
