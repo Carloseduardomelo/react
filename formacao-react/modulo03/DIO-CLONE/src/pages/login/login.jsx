@@ -48,7 +48,7 @@ const Login = () => {
                 <hr/>
             <ButEntar>
                 <div id="but">
-                    <button type="button">Entar</button>
+                    <button type="button"><Link id="bot" to={`/logado`}>Entar</Link></button>
                 </div>
             </ButEntar>
             <EsquiCriar>

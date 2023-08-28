@@ -132,6 +132,11 @@ export const ContInfHearder = styled.div`
         background-color: red;
         color: white;
         border: none;
+
+        #bot{
+            color: white;
+            text-decoration: none;
+        }
     }
     @media (max-width: 720px) and (min-width:0px){
         width: 100%;
@@ -285,6 +290,11 @@ export const ButEntar = styled.div`
         background-color: red;
         color: whitesmoke;
         border: none;
+
+        #bot{
+            color: white;
+            text-decoration: none;
+        }
     }
     margin-bottom: 10px;
 `

@@ -41,7 +41,7 @@ return (
                 </p>
 
                 <div id="but">
-                    <button type="button">começe agora</button>
+                    <button type="button"><Link id="bot" to={`/login`}>Começe agora</Link></button>
                 </div>
             </ContInfHearder>
             <ContImgHearder>
