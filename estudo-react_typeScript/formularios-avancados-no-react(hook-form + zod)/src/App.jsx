@@ -3,6 +3,9 @@ import './style/global.css'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { Link } from 'react-router-dom'
+import { redirect } from 'react-router-dom'
+import Nada from './pages'
 
 const App = () => {
 
@@ -20,22 +23,28 @@ const App = () => {
     //! O min ele vai fazer com que o usuario coloque pelo menos 6 caracteres, caso ele não coloque ele vai exibir uma mensagen passada min.
   })
 
-  const [ output , setOutput ] = useState('')
-
+  
+  const [ output , setOutput ] = useState([])
+  
   const { register , handleSubmit , formState: { errors } } = useForm({
     //? nos presizanos informa as regras para os inputs siguinas, para fazer isso vou mostra abaixo.
     //? para fazer isso nos temos que importar o zodResolverda @hookform/resolvers/zod
-
+    
     resolver: zodResolver(createUserForm) //! com isso nos aplicamos todas as regras que criamos ali em cima no createUserform, para perceper isso basta clicar o button submit ele não vai enviar nada ele vai dar um foco no input de email ou na senha
     //? caso queira ver os erros nos temos que chamar o formStates, com ele chamado basta fazer um console.log(formState.erros)
     //? para melhor usabilidade nos fazemos outras destruturação do formState assim : formState: { errors } : e passamos em baixo de cade input isso : {irrors.email && <span> { errors.email.mensagens } </span> } a mesma coisa para o input de senha
   })
   //! resgiste vai sevir para registrar nossos campos
-
+  
   const createUser = (data) => {
-    setOutput(JSON.stringify(data , null , 2))
+    //setOutput([JSON.stringify(data , null , 2)])
+    
+    setOutput(data)
   }
 
+  function levar() {
+      console.log(redirect('https://www.youtube.com/watch?v=XSbMSSdGSdg&t=5s'))
+  }
 
   return (
     <main className="h-screen bg-zinc-50 flex items-center justify-center">
@@ -70,15 +79,16 @@ const App = () => {
             />
             {errors.password && <span>{errors.password.message}</span>}
         </div>
-
+            
         <button 
         type="submit"
-        className="bg-emerald-400 rounded font-semibold text-white h-10 hover:bg-emerald-600" >
-          Salvar
+        className="bg-emerald-400 rounded font-semibold text-white h-10 hover:bg-emerald-600" 
+        onClick={levar()}>
+          entre
         </button>
 
 
-        <pre>{output}</pre>
+      {console.log(output.email)}
       </form>
 
     </main>
