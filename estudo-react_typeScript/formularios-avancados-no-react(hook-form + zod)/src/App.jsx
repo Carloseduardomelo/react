@@ -3,16 +3,13 @@ import './style/global.css'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Link } from 'react-router-dom'
-import { redirect } from 'react-router-dom'
-import Nada from './pages'
 
 const App = () => {
 
   const createUserForm = z.object({
     //! Aqui nos vamos fazer um estrutura de dados formicidos pelo data, que vai ser os dados dos inputs.
 
-    email: z.string().nonempty('preencha o email por favor').email(),
+    email: z.string().nonempty('preencha o email por favor').toLowerCase(true).email(),
     //! No campo de email vai nos retorna uma string ne, enmagina si não retornase ksksksk / aqui vamos meio que fazer uma tratamentos dos dados.
     //! O zod tambem permite que nos tambem possamos fazer algumas validações.
     //! O nonempty fazes que o input seja brigatorio, e tbm podemos passar uma menssagen caso não for preemcido EX: .nonempty("preencha o email pfv")
@@ -26,7 +23,7 @@ const App = () => {
   
   const [ output , setOutput ] = useState([])
   
-  const { register , handleSubmit , formState: { errors } } = useForm({
+  const { register , handleSubmit ,  watch , formState: { errors } } = useForm({
     //? nos presizanos informa as regras para os inputs siguinas, para fazer isso vou mostra abaixo.
     //? para fazer isso nos temos que importar o zodResolverda @hookform/resolvers/zod
     
@@ -38,13 +35,11 @@ const App = () => {
   
   const createUser = (data) => {
     //setOutput([JSON.stringify(data , null , 2)])
-    
     setOutput(data)
   }
 
-  function levar() {
-      console.log(redirect('https://www.youtube.com/watch?v=XSbMSSdGSdg&t=5s'))
-  }
+  const from = watch()
+
 
   return (
     <main className="h-screen bg-zinc-50 flex items-center justify-center">
@@ -82,15 +77,11 @@ const App = () => {
             
         <button 
         type="submit"
-        className="bg-emerald-400 rounded font-semibold text-white h-10 hover:bg-emerald-600" 
-        onClick={levar()}>
+        className="bg-emerald-400 rounded font-semibold text-white h-10 hover:bg-emerald-600">
           entre
         </button>
-
-
-      {console.log(output.email)}
+        {console.log(output)}
       </form>
-
     </main>
   )
 }
