@@ -4,4 +4,6 @@ export default interface IProtudos{
     preco: number
     descricao: string
     imagem: string
+
+    //! tipagem de Iprotudos
 }

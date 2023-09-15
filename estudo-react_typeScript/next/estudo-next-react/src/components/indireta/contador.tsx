@@ -7,12 +7,16 @@ import { useState } from "react"
 
 const Contador = () =>{
 
+    //! esse estado vai ser serponsavel paara genrensiar o numero do contador
     const [ cont , setCont ] = useState<number>(0)
 
+
+    //! function de incremento que vamos passar com parametro para nosso button
     const inc = () =>{
         setCont(cont - 1)
     }
 
+    //! function de decremento que vamos passar com parametro para nosso button
     const dek = () =>{
         setCont(cont + 1)
     }

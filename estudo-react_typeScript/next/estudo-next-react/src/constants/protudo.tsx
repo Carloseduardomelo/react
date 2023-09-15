@@ -2,6 +2,7 @@ import IProtudos from "@/model/protudos";
 
 
 const Protutos: IProtudos[] = [
+    //! esse arquivo uma variavel global de tem o tipos de  Iprodutos
     {
         id: 1,
         nome: 'camisa',
