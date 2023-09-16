@@ -16,6 +16,7 @@ const Cont = () =>{
                 <ButtonRouter text={`ter/Liste`} para={`List`} />
                 <ButtonRouter text={`ter/Protudos`} para={`protutos`} />
                 <ButtonRouter text={`quar/Grid`} para={`Grid`} />
+                <ButtonRouter text={`quar/start`} para={`start`} />
             </div>
 
         </div>

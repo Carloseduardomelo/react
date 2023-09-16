@@ -19,6 +19,7 @@ const PagListe = () =>{
                 <ButtonRouter text={`ter/Faq`} para={`Faq`}/>
                 <ButtonRouter text={`ter/Protudos`} para={`protutos`} />
                 <ButtonRouter text={`quar/Grid`} para={`Grid`} />
+                <ButtonRouter text={`quar/start`} para={`start`} />
 
                 {}
             </div>

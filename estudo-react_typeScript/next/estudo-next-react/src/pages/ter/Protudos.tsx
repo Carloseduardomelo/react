@@ -15,6 +15,7 @@ const PagProtuto = () =>{
                 <ButtonRouter text={`seg/cont`} para={`cont`}/>
                 <ButtonRouter text={`ter/Faq`} para={`Faq`}/>
                 <ButtonRouter text={`quar/Grid`} para={`Grid`} />
+                <ButtonRouter text={`quar/start`} para={`start`} />
             </div>
         </div>
     )
