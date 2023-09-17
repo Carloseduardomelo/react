@@ -5,11 +5,11 @@ import { useState } from "react";
 export default function Img() {
   return(
     <div className={`w-screen h-screen flex items-center justify-center flex-col gap-10`}>
-      <div className={`w-screen h-[90%] flex items-center justify-center gap-10`}>
+      <div className={`full-screen h-[90%] flex items-center justify-center gap-10`}>
           <ImgAlt />
           <ImgAlt />
       </div>
-      <div className={`flex gap-11 h-[10%]`}>
+      <div className={`flex gap-10 h-[10%] w-full`}>
           <ButtonRouter text={`seg/cont`} para={`cont`}/>
           <ButtonRouter text={`ter/Faq`} para={`Faq`}/>
           <ButtonRouter text={`ter/Liste`} para={`List`} />

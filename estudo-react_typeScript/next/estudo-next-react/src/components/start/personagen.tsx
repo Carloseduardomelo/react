@@ -1,15 +1,12 @@
-import useProcesso from "@/data/hooks/useProcesso";
 import { ReactElement, useEffect, useState } from "react";
 import api from "@/services/api/api";
 import axios, { Axios, AxiosError } from "axios";
-import usePegar from "@/data/hooks/usePegar";
-import useProximaPage from "@/data/hooks/useProxinaPage";
 
 const Persongen = () =>{
 
     const [ nextPage , setNextPage ] = useState<string>('')
     const [ voltatPage , setvoltaPage ] = useState<string>('')
-    const [ dadosApi ,  setDadosApi ] = useState<string[]>([])
+    const [ dadosApi ,  setDadosApi ] = useState<string[]>(['carregando'])
 
     const SimularChamadaApi = async () =>{
 
@@ -28,8 +25,6 @@ const Persongen = () =>{
         //console.log(dadosApi.map((dada:any, i ) => dada['name']))
     }
 
-
-    
    const proximaPage = async () =>{
 
         const dadonext = await axios.get(nextPage)
@@ -47,9 +42,7 @@ const Persongen = () =>{
         console.log(dado)
 
    }
-
     
-
     const voltarPage = async () =>{
         try{
             const dadoVoltar = await axios.get(voltatPage)
@@ -70,7 +63,7 @@ const Persongen = () =>{
             alert('n tem como voltar mais uma page')
         }
     }
-
+ 
     useEffect(() =>{
         SimularChamadaApi()
     },[])
@@ -84,7 +77,6 @@ const Persongen = () =>{
                 
             </div>
             <div className={`w-full h-[10%] flex items-center justify-center gap-11`}>
-                <button onClick={SimularChamadaApi} className={`w-[200px] h-[50px] bg-purple-600 `}>pegar api</button>
                 <button onClick={proximaPage} className={`w-[200px] h-[50px] bg-purple-600 `}>proxima pag</button>
                 <button onClick={voltarPage} className={`w-[200px] h-[50px] bg-purple-600 `}>voltar pag</button>
             </div>
