@@ -4,7 +4,7 @@ import Hearder from "../../components/Hearder/hearder"
 import foto from '../../assets/background.png'
 import foto02 from '../../assets/31221705_7746242.jpg'
 import Repositorios  from "../../components/repositorios/Repositorios"
-import Perfil from "../../components/perfil/perfil"
+import Perfil from "../../components/perfil/Perfil"
 import { useState } from "react"
 
 const App = () => {
